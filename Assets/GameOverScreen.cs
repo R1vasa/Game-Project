@@ -1,16 +1,11 @@
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class GameOverScreen : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   public void Retty(){
+    SceneManager.LoadScene("Retry");
+   }
+   public void Exit(){
+    SceneManager.LoadScene("Exit");
+   }
 }
